@@ -123,7 +123,7 @@ import Profile from "./components/i18nComponent/Profile";
 /* React i18n */
 function App() {
   return (
-    <Suspense fallback={null}>
+    <Suspense>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

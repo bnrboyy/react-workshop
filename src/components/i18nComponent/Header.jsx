@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
 function Header() {
-  const { i18n, t } = useTranslation(["common"]);
+  const { i18n, t } = useTranslation("common");
   useEffect(() => {
     if (localStorage.getItem("i18nextLng")?.length > 2) {
       i18next.changeLanguage("en");
